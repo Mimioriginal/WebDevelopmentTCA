@@ -11,13 +11,7 @@ grid-area: nav;}
 
 main {background-color: aqua;}
 
-main.header 
-{
-    background-color: blueviolet;
-    grid-area: header;
-}
-
 footer{
-    background-color: green;
+    background-color: palevioletred;
     grid-area: footer;
 }
