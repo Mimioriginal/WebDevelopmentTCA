@@ -7,7 +7,8 @@ margin: 0;
 padding: 0;}
 
 nav {background-color: yellow;
-grid-area: nav;}
+grid-area: nav;
+margin: 1em;}
 
 main {background-color: aqua;}
 

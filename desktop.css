@@ -9,3 +9,37 @@ grid-template-areas:
 "footer"}
 
 .on,.off {display: none;}
+
+/* example for comments */
+
+
+
+.TheMain {
+    background-color: brown;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
+    height: 40em;
+    grid-template-areas: "maintitle"
+    "maincontent"
+    "mainbuttons";
+}
+
+.TheMain .maintitle 
+{
+    grid-area: maintitle;
+}
+
+.TheMain .maincontent 
+{
+    grid-area: maincontent;
+}
+
+.TheMain .mainbuttons 
+{
+    grid-area: mainbuttons;
+}
+
+footer {
+    text-align: center;
+}
