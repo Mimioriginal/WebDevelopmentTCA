@@ -1,0 +1,23 @@
+body{   
+    background-color: grey;
+    color: white;}
+
+*{
+margin: 0;
+padding: 0;}
+
+nav {background-color: yellow;
+grid-area: nav;}
+
+main {background-color: aqua;}
+
+main.header 
+{
+    background-color: blueviolet;
+    grid-area: header;
+}
+
+footer{
+    background-color: green;
+    grid-area: footer;
+}

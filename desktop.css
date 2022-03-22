@@ -1,0 +1,9 @@
+body{background-color: grey;
+color: white;
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: auto;
+grid-template-areas: 
+"nav"
+"main"
+"footer"}
