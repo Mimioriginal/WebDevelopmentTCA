@@ -80,12 +80,59 @@ nav ul li a.active{
     border: 3px solid- transparent;
 }
 
+/*hover effect over links in nav ul li
+change the background colour to lighter grey
+making sure border radius is the same as the style of the link
+transition to make the change visible in 0.4s, type ease
+added animation that I created, animation should last 1s, type ease,
+animation infinite as I don't want it to stop after 1s, rather loop*/
 nav ul li a:hover{
     background-color: rgb(130, 130, 130);
     color: rgb(110, 18, 216);
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     transition: all 0.4s ease;
+    animation: rotatingborder 1s linear infinite;
+}
+
+/*keyframes animation, 
+colours changing at about every quarter of the time defined in animation:, 
+returning to starting colours*/
+@keyframes rotatingborder{
+  0%{
+      border-left: 3px solid rgb(132, 0, 255);
+      border-top: 3px solid rgb(87, 58, 133);
+      border-right:3px solid purple;
+      border-bottom: 3px solid rgb(160, 71, 201);
+  }
+
+  25%{
+      border-left: 3px solid rgb(160, 71, 201);
+      border-top: 3px solid rgb(132, 0, 255);
+      border-right:3px solid rgb(87, 58, 133);
+      border-bottom: 3px solid purple;
+  }
+
+  50%{
+      border-left: 3px solid purple;
+      border-top: 3px solid rgb(160, 71, 201);
+      border-right:3px solid rgb(132, 0, 255);
+      border-bottom: 3px solid rgb(87, 58, 133);
+  }
+
+  75%{
+      border-left: 3px solid rgb(87, 58, 133);
+      border-top: 3px solid purple;
+      border-right:3px solid rgb(160, 71, 201);
+      border-bottom: 3px solid rgb(132, 0, 255);
+  }
+
+  100%{
+      border-left: 3px solid rgb(132, 0, 255);
+      border-top: 3px solid rgb(87, 58, 133);
+      border-right:3px solid purple;
+      border-bottom: 3px solid rgb(160, 71, 201);
+  }
 }
 
 .hpmain {
