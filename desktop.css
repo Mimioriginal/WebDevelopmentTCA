@@ -1,7 +1,7 @@
 body{background-color: grey;
 color: white;
 display: grid;
-grid-template-columns: 100%;
+grid-template-columns: 100vw;
 grid-template-rows: auto;
 grid-template-areas: 
 "nav"
@@ -14,32 +14,40 @@ grid-template-areas:
 
 
 
-.TheMain {
-    background-color: brown;
+.hpmain {
+    grid-area: main;
+    position: relative;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto ;
-    height: 40em;
-    grid-template-areas: "maintitle"
-    "maincontent"
-    "mainbuttons";
+    grid-template-columns: 29vw 69vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". thetitle"
+    ". thedescription";
+    justify-items: center;
+    align-items: center;
+    min-height: 88vh;
 }
 
-.TheMain .maintitle 
-{
-    grid-area: maintitle;
-}
-
-.TheMain .maincontent 
-{
-    grid-area: maincontent;
-}
-
-.TheMain .mainbuttons 
-{
-    grid-area: mainbuttons;
-}
-
-footer {
+.thetitle{
+    grid-area: thetitle;
+    color: violet;
+    position: relative;
+    display: block;
     text-align: center;
+    background-color: transparent;
+    font-size: 60px;
+    width: 70vw;
+    min-height: 31vh;
+    margin: 1em;
+}
+
+.thedescription{
+    grid-area: thedescription;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(36, 36, 36);
+    padding: 0.5em;
+    border-radius: 1em;
+    font-size: 20px;
+    margin: 5em;
 }
