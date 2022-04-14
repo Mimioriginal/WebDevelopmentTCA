@@ -3,16 +3,25 @@ body{
     color: white;
     }
 
+/*removed browser defaul padding and margin and default bullet decorations from lists*/
 *{
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
+/*remove text decorations and font colour for both unvisited and visited links, all links should have the same font colour*/
+a:link, a:visited{
+    text-decoration: none;
+    color: rgb(170, 111, 209);
+}
+
+/*consistent background colour for nav both mobile and desktop*/
 nav {
     background-color: rgb(22, 22, 22);
 }
 
+/*  main background colour set to transparent, to make the body background colour/img visible*/
 main {background-color: transparent;}
 
 footer{
