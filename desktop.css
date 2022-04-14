@@ -173,3 +173,20 @@ returning to starting colours*/
     font-size: 20px;
     margin: 5em;
 }
+
+/*portfolio main class positioned into the 'main' grid area, 
+position relative of other elements in the 'body'
+max width should be 100% of the view width
+3 columns within portfolio main, 
+min height 79% of view heigh, this is so that the footer wouldn't jump to the middle of the screen 
+if the portfolio main area isn't filled.*/
+.pfmain{
+    grid-area: main;
+    position: relative;
+    max-width: 100vw;
+    columns: 3;
+    text-align: center;
+    margin: 2em;
+    min-height: 79vh;
+    column-gap: 3em;
+}
