@@ -207,3 +207,12 @@ if the portfolio main area isn't filled.*/
     border-radius: 25px;
 }
 
+/*making sure that the clickable link doesn't exceed the size of the images,
+margin bottom set so that the portfolio images within columns would be more visible*/
+.pfmain ul li a{
+    display: block;
+    max-width: 250px;
+    max-height: 150px;
+    margin: auto;
+    margin-bottom: 2em;
+}
