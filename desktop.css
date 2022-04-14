@@ -10,8 +10,6 @@ grid-template-areas:
 
 .on,.off {display: none;}
 
-/* example for comments */
-
 nav{
     grid-area: nav;
     max-height: 55px;
@@ -57,6 +55,27 @@ nav ul li{
     float: left;
     position: relative;
     text-align: center;
+}
+
+
+nav ul li a{
+    display: inline-block;
+    background-color:rgb(36, 36, 36);
+    padding: 0.4em;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    font-size: 16px;
+    margin: 0.2em;
+    border: 3px solid transparent;
+    transition: all 0.4s ease;
+}
+
+nav ul li a:hover{
+    background-color: rgb(130, 130, 130);
+    color: rgb(110, 18, 216);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    transition: all 0.4s ease;
 }
 
 .hpmain {
