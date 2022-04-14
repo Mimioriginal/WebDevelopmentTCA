@@ -1,4 +1,5 @@
-body{background-color: grey;
+body{
+background-image: url(bkimg.png);    
 color: white;
 display: grid;
 grid-template-columns: 100vw;

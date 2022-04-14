@@ -1,6 +1,15 @@
+/*dark gray background colour (fallback if desktop img fails to load in desktop,
+centered background img that doesnt repeat, max viewwidth 100% of screen width,
+white font colour, all font set to sans serif and size 16px*/
 body{   
     background-color: rgb(22, 22, 22);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100vw;
     color: white;
+    font-family: sans-serif;
+    font-size: 16px;
     }
 
 /*removed browser defaul padding and margin and default bullet decorations from lists*/
@@ -21,10 +30,22 @@ nav {
     background-color: rgb(22, 22, 22);
 }
 
-/*  main background colour set to transparent, to make the body background colour/img visible*/
-main {background-color: transparent;}
+/*main background colour set to transparent, to make the body background colour/img visible*/
+main {
+    background-color: transparent;
+}
 
+/*footer in the correct grid area, takes up the whole width of the screen, positioned bottom left,
+some padding added above and below it so that the text is a bit more readable*/
 footer{
-    background-color: palevioletred;
+    position: relative;
     grid-area: footer;
+    width: 100vw;
+    left: 0%;
+    bottom: 0%;
+    background-color: palevioletred;
+    text-align: center;
+    height: 1em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 }
