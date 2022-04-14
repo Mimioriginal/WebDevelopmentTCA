@@ -190,3 +190,20 @@ if the portfolio main area isn't filled.*/
     min-height: 79vh;
     column-gap: 3em;
 }
+
+
+/*styling for images within portfolio main*/
+.pfmain ul li a img{
+    display: block;
+    max-width: 250px;
+    max-height: 150px;
+    margin: auto;
+    border-style: ridge;
+    border-width: 3px;
+    column-span: none;
+    padding: 0.5em;
+    background-color: rgb(129, 86, 170);
+    transition: all 0.4s ease;
+    border-radius: 25px;
+}
+
