@@ -12,7 +12,52 @@ grid-template-areas:
 
 /* example for comments */
 
+nav{
+    grid-area: nav;
+    max-height: 55px;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    display: grid;
+    grid-template-columns: 10vw 10vw 20vw 60vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". navlogo name navul";
+    z-index: 999;
+    justify-items: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 
+.homelink, img.thelogo{
+    position: relative;
+    grid-area: navlogo;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.name{
+    position: relative;
+    grid-area: name;
+    text-align: center;
+    color: violet;
+    justify-self: left;
+}
+
+nav ul{
+    position: relative;
+    grid-area: navul;
+}
+
+nav ul li{
+    float: left;
+    position: relative;
+    text-align: center;
+}
 
 .hpmain {
     grid-area: main;

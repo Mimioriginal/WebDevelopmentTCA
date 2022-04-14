@@ -1,16 +1,19 @@
 body{   
-    background-color: grey;
-    color: white;}
+    background-color: rgb(22, 22, 22);
+    color: white;
+    }
 
 *{
-margin: 0;
-padding: 0;}
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
-nav {background-color: yellow;
-grid-area: nav;
-margin: 1em;}
+nav {
+    background-color: rgb(22, 22, 22);
+}
 
-main {background-color: aqua;}
+main {background-color: transparent;}
 
 footer{
     background-color: palevioletred;
