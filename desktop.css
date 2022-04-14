@@ -1,7 +1,7 @@
 body{background-color: grey;
 color: white;
 display: grid;
-grid-template-columns: 100%;
+grid-template-columns: 100vw;
 grid-template-rows: auto;
 grid-template-areas: 
 "nav"
@@ -9,3 +9,166 @@ grid-template-areas:
 "footer"}
 
 .on,.off {display: none;}
+
+nav{
+    grid-area: nav;
+    max-height: 55px;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    display: grid;
+    grid-template-columns: 10vw 10vw 20vw 60vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". navlogo name navul";
+    z-index: 999;
+    justify-items: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.homelink, img.thelogo{
+    position: relative;
+    grid-area: navlogo;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.name{
+    position: relative;
+    grid-area: name;
+    text-align: center;
+    color: violet;
+    justify-self: left;
+}
+
+nav ul{
+    position: relative;
+    grid-area: navul;
+}
+
+nav ul li{
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+
+nav ul li a{
+    display: inline-block;
+    background-color:rgb(36, 36, 36);
+    padding: 0.4em;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    font-size: 16px;
+    margin: 0.2em;
+    border: 3px solid transparent;
+    transition: all 0.4s ease;
+}
+
+/*all links (a) with class .active inside nav ul li (current page open)*/
+nav ul li a.active{
+    background-color: rgb(105, 105, 105);
+    color: black;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    transition: all 0.4s ease;
+    border: 3px solid- transparent;
+}
+
+/*hover effect over links in nav ul li
+change the background colour to lighter grey
+making sure border radius is the same as the style of the link
+transition to make the change visible in 0.4s, type ease
+added animation that I created, animation should last 1s, type ease,
+animation infinite as I don't want it to stop after 1s, rather loop*/
+nav ul li a:hover{
+    background-color: rgb(130, 130, 130);
+    color: rgb(110, 18, 216);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    transition: all 0.4s ease;
+    animation: rotatingborder 1s linear infinite;
+}
+
+/*keyframes animation, 
+colours changing at about every quarter of the time defined in animation:, 
+returning to starting colours*/
+@keyframes rotatingborder{
+  0%{
+      border-left: 3px solid rgb(132, 0, 255);
+      border-top: 3px solid rgb(87, 58, 133);
+      border-right:3px solid purple;
+      border-bottom: 3px solid rgb(160, 71, 201);
+  }
+
+  25%{
+      border-left: 3px solid rgb(160, 71, 201);
+      border-top: 3px solid rgb(132, 0, 255);
+      border-right:3px solid rgb(87, 58, 133);
+      border-bottom: 3px solid purple;
+  }
+
+  50%{
+      border-left: 3px solid purple;
+      border-top: 3px solid rgb(160, 71, 201);
+      border-right:3px solid rgb(132, 0, 255);
+      border-bottom: 3px solid rgb(87, 58, 133);
+  }
+
+  75%{
+      border-left: 3px solid rgb(87, 58, 133);
+      border-top: 3px solid purple;
+      border-right:3px solid rgb(160, 71, 201);
+      border-bottom: 3px solid rgb(132, 0, 255);
+  }
+
+  100%{
+      border-left: 3px solid rgb(132, 0, 255);
+      border-top: 3px solid rgb(87, 58, 133);
+      border-right:3px solid purple;
+      border-bottom: 3px solid rgb(160, 71, 201);
+  }
+}
+
+.hpmain {
+    grid-area: main;
+    position: relative;
+    display: grid;
+    grid-template-columns: 29vw 69vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". thetitle"
+    ". thedescription";
+    justify-items: center;
+    align-items: center;
+    min-height: 88vh;
+}
+
+.thetitle{
+    grid-area: thetitle;
+    color: violet;
+    position: relative;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    font-size: 60px;
+    width: 70vw;
+    min-height: 31vh;
+    margin: 1em;
+}
+
+.thedescription{
+    grid-area: thedescription;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(36, 36, 36);
+    padding: 0.5em;
+    border-radius: 1em;
+    font-size: 20px;
+    margin: 5em;
+}
