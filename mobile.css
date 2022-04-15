@@ -24,7 +24,7 @@ body{
         display: none;
     }
 
-    /*if nav is on, dont display .off*/
+    /*if nav is on, dont display .off and vice versa*/
     #showNav:target .on {display: none;}
     #showNav:target .off {display: block;}
     #showNav .on {display: block;}
@@ -39,6 +39,7 @@ body{
         display: block;
         border-top: 0.2em solid white;
         border-bottom: 0.2em solid white;
+        border-radius: 15%;
         }
 
     .on:before {
@@ -55,6 +56,7 @@ body{
             display: block;
             border-top: 0.2em solid white;
             border-bottom: 0.2em solid white;
+            border-radius: 15%;
             }
     
         .off:before {
