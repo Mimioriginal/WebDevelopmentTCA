@@ -136,23 +136,23 @@ a.mobilemenu.active{
 }
 
 /*blog styling*/
-.blogmain p, .blogmain h1, .blogmain h2{
+.blogmain p, .blogmain h1, .blogmain h2, .srmain p, .srmain h1, .srmain h2{
     text-align: left;
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
-.blogmain h1{
+.blogmain h1, .srmain h1{
     color: violet;
     font-size: 25px;
     margin-top: 2em;
 }
 
-.blogmain h2{
+.blogmain h2, .srmain h2{
     font-size: 14px;
 }
 
-.blogmain p{
+.blogmain p, .srmain p{
     font-size: 16px;
     margin-top: 1em;
 }
@@ -196,3 +196,10 @@ a.mobilemenu.active{
     margin-bottom: 2em;
 }
 
+.srmain img{
+    display: block;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
