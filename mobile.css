@@ -103,3 +103,22 @@ a.mobilemenu.active{
     color: black;
 }
 
+/*styling homepage content*/
+.thetitle, .thedescription{
+    grid-area: main;
+    position: relative;
+    column-count: 1;
+    column-width: 80vw;
+    margin: auto;
+    text-align: center;
+    margin: 1em;
+}
+
+.thetitle{
+    font-size: 40px;
+}
+
+.thedescription{
+    font-size: 20px;
+}
+
