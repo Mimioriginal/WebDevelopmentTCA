@@ -255,3 +255,17 @@ background colour set because of bright colours on the body background image*/
     background-color: rgb(22, 22, 22);
     border-radius: 25px;
 }
+/*grid template for contact main area*/
+.contactmain{
+    grid-area: main;
+    text-align: center;
+    display: grid;
+    height: 85vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 3em 3em 85%;
+    grid-template-areas: 
+    "h1"
+    "p"
+    "form";
+    justify-items: center;
+}
