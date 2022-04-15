@@ -78,7 +78,7 @@ nav ul li a.active{
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     transition: all 0.4s ease;
-    border: 3px solid- transparent;
+    border: 3px solid transparent;
 }
 
 /*hover effect over links in nav ul li
@@ -356,4 +356,38 @@ background colour set because of bright colours on the body background image*/
 
 .fnlabel, .lnlabel, .chlabel{
     align-self: center;
+}
+
+.srmain{
+    grid-area: main;
+}
+
+.srmain article{
+    margin: 10%;
+    background-color: rgb(22, 22, 22);
+}
+
+.srmain h1{
+    color: violet;
+}
+
+.blogmain h2, .srmain h2{
+    font-size: 14px;
+    display: block;
+    background-color: rgb(22, 22, 22);
+    padding: 0.1em;
+    border-radius: 25px;
+}
+
+.srmain img{
+    display: block;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+.srmain p{
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
