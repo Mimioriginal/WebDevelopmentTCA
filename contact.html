@@ -25,6 +25,26 @@
 
 <main class="contactmain">
     <a href="#showNav" class = "on"></a>
+
+    <h1>Contact me now</h1>
+    <p>Got a question? I'd love to hear from you. Send me a message by filling out the form bellow and I'll respond as soon as possible.</p>
+    <form action="mailto:mimi@neebs.co.uk?subject=ContactForm" method="POST">
+        <label for="FirstName" class="fnlabel">First Name:</label>
+        <input type="text" name="FirstName" id="FirstName">
+
+        <label for="LastName" class="lnlabel">Last Name:</label>
+        <input type="text" name="LastName" id="LastName">
+
+        <label for="Choice" class="chlabel">Hiring or Website:</label>
+        <select name="Choice" id="Choice">
+            <option value="default">please choose...</option>
+            <option value="Hiring">I'm hiring</option>
+            <option value="Website">I'd like a website</option>
+        </select>
+
+        <textarea name="message" id="Message" placeholder="Your message here..."></textarea> 
+        <input type="submit" name="submit" class="send" value="Send">
+    </form>
 </main>
 
 <footer>&copy; Mimi - 2022</footer>
