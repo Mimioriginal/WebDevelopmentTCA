@@ -269,3 +269,11 @@ background colour set because of bright colours on the body background image*/
     "form";
     justify-items: center;
 }
+
+/*title of page highlighted, styling*/
+.contactmain h1{
+    grid-area: h1;
+    position: relative;
+    color: violet;
+    width: 70vw;
+}
