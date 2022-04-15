@@ -19,6 +19,7 @@ body{
         width: 60%;
         z-index: 999;
     }
+
     /*dont display name and logo*/
     .homelink, img.thelogo, .name{
         display: none;
@@ -100,6 +101,7 @@ a.mobilemenu:active{
     padding: 0.25em;
     transition: all 0.5s ease-in;
 }
+
 /*currently open page different colour than the menu items*/
 a.mobilemenu.active{
     background-color: rgb(105, 105, 105);
@@ -193,3 +195,4 @@ a.mobilemenu.active{
     height: 1.5em;
     margin-bottom: 2em;
 }
+
