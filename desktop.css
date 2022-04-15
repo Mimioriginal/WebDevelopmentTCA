@@ -277,3 +277,11 @@ background colour set because of bright colours on the body background image*/
     color: violet;
     width: 70vw;
 }
+
+/*paragraph styling within contact main class*/
+.contactmain p{
+    grid-area: p;
+    position: relative;
+    color: violet;
+    width: 70vw;
+}
