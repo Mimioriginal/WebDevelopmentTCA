@@ -247,3 +247,11 @@ background colour set because of bright colours on the body background image*/
     padding: 0.1em;
     border-radius: 25px;
 }
+
+/*paragraph within blogmain class styling*/
+.blogmain p{
+    display: block;
+    padding: 0.5em;
+    background-color: rgb(22, 22, 22);
+    border-radius: 25px;
+}
