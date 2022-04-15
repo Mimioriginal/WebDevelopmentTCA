@@ -223,3 +223,15 @@ margin bottom set so that the portfolio images within columns would be more visi
     transition: all 0.4s ease;
     animation: rotatingborder 1s linear infinite;
 }
+
+/*class blog main inside main grid area
+1 column, 10% of viewidth on either side of content
+min heigh set because footer position is set to relative, 
+so this will keep it at bottom of page*/
+.blogmain{
+    grid-area: main;
+    columns: 1;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-height: 88vh;
+}
