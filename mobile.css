@@ -9,7 +9,7 @@ body{
     "main"
     "footer"}
 
-    /*nav size, position etc*/
+    /*nav size, position etc, z-index high so the nav would cover over the main*/
     nav {
         display: none;
         position: fixed;
@@ -17,6 +17,7 @@ body{
         left: 0%;
         height: 100vh;
         width: 60%;
+        z-index: 999;
     }
     /*dont display name and logo*/
     .homelink, img.thelogo, .name{
@@ -120,5 +121,13 @@ a.mobilemenu.active{
 
 .thedescription{
     font-size: 20px;
+}
+
+/*portfolio images and links*/
+.pfmain img, .pfmain ul a{
+    border-radius: 20px;
+    max-width: 250px;
+    max-height: 250px;
+    margin: 2.5em;
 }
 
