@@ -285,3 +285,24 @@ background colour set because of bright colours on the body background image*/
     color: violet;
     width: 70vw;
 }
+
+/*form on contact page styling*/
+.contactmain form{
+    grid-area: form;
+    color: white;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 3em 3em 3em 6em 3em;
+    grid-template-areas: 
+    "fnlabel fninput"
+    "lnlabel lninput"
+    "chlabel chinput"
+    "txtarea txtarea"
+    "send send";
+    justify-items: center;
+    background-color: rgb(130, 130, 130);
+    border-radius: 50px;
+    margin: 3em;
+    height: 18em;
+}
