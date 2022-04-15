@@ -55,6 +55,7 @@ body{background-color: blue;
             margin-top: 0.3em;
             border-top: 0.2em solid white;
             }
+            
 /*main areas from different html pages*/
 .hpmain, .blogmain, .contactmain, .pfmain{
     grid-area: main;
@@ -62,3 +63,34 @@ body{background-color: blue;
     min-height: 96vh;
 }
 
+/*stlying the links inside nav*/
+.mobilemenu{
+    display: block;
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding: 0.25em;
+    transition: all 0.5s ease-in;
+}
+
+/*what happens when the user taps the links with class mobilemenu*/
+a.mobilemenu:active{
+    display: block;
+    background-color: rgb(130, 130, 130);
+    color: rgb(110, 18, 216);
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding: 0.25em;
+    transition: all 0.5s ease-in;
+}
+/*currently open page different colour than the menu items*/
+a.mobilemenu.active{
+    background-color: rgb(105, 105, 105);
+    color: black;
+}
