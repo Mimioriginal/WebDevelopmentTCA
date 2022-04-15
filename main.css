@@ -49,3 +49,13 @@ footer{
     padding-top: 0.25em;
     padding-bottom: 0.25em;
 }
+
+/*disable resizing on textarea*/
+textarea{
+    resize: none;
+}
+
+/*border styling for input, textarea and Choice*/
+input, textarea, #Choice{
+    border: 2px solid rgb(170, 111, 209);
+}

@@ -306,3 +306,54 @@ background colour set because of bright colours on the body background image*/
     margin: 3em;
     height: 18em;
 }
+
+/*asigning form elements to the appropriate grid area*/
+.fnlabel{
+    grid-area: fnlabel;
+}
+
+#FirstName{
+    grid-area: fninput;
+}
+
+.lnlabel{
+    grid-area: lnlabel;
+}
+
+#LastName{
+    grid-area: lninput;
+}
+
+.chlabel{
+    grid-area: chlabel;
+}
+
+#Choice{
+    grid-area: chinput;
+}
+
+.contactmain textarea{
+    grid-area: txtarea;
+    width: 65%;
+    min-height: 6em;
+}
+
+.send{
+    grid-area: send;
+    width: 5em;
+    height: 2em;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+#FirstName, #LastName, #Choice{
+    width: 50%;
+    height: 1.5em;
+    padding: 0%;
+    justify-self: left;
+    align-self: center;
+}
+
+.fnlabel, .lnlabel, .chlabel{
+    align-self: center;
+}
