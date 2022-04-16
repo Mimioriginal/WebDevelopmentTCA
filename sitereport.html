@@ -29,40 +29,66 @@
     <article>
         <h1>Starting with HTML and CSS</h1>
         <h2>15/APR/2022</h2>
-        <p>At first it seemed like a website with 5 pages would be a lot of work. However as always, it was best to start from the beginning.</p>
+        <h3>Learning Experience and Debugging Process</h3>
+        <p>Chrome's inspect option helped me a great deal with debugging. I was able to select certain elements, see grid layout lines, grid area names, the positions of elements. It also helped me figure out which widths and heights I needed to use.</p>
+
+        <h3>What Went Well</h3>
+        <p>My favourite moment was when I figured out a simple way to create the animated border on hover effect in my nav menu. At first I thought that it would take me days to figure out how to create keyframe animations, however I was able to realise my idea within about 10 minutes of research.</p>
+
+        <h3>What Went Wrong</h3>
+        <p>My least favorite moment was when I thought that Visual Studio Code transfers the classes to the CSS file from my html files. I tried to write .name_of_class in my CSS file however Visual Studio Code wasn't suggesting to autofill the class from my html file. It baffled me. For 4 hours. That was one miserable afternoon. I felt like I wasted a lot of valuable time. I had tried to type out the class anyway and apply the styles that I wanted, however my website still didn't work. The truth was that I just didn't understand how the grid layout worked at this time. However in reality, I was looking for an answer to the wrong question: "How to fix my text editor?"</p>
+
+        <h3>Technical</h3>
         <p>First I created the index.html page with the correct DOCTYPE, head, title, body (main and footer). 
         I then added the nav tag with an unordered list and links to the relevant pages that I will be needing in my nav bar. One think I love about Visual Studio Code editor is that I can CTRL+click on the html links listed
         inside the nav and it will allow me to create a new html file as well as the autofill suggestions as this 
         has saved me a lot of time.</p>
-        <p>My least favorite moment was when I thought that Visual Studio Code transfers the classes to the CSS file from my html files. I tried to write .name_of_class in my CSS file however Visual Studio Code wasn't suggesting to autofill the class from my html file. It baffled me. For 4 hours. That was one miserable afternoon. I felt like I wasted a lot of valuable time. I had tried to type out the class anyway and apply the styles that I wanted, however my website still didn't work. The truth was that I just didn't understand how the grid layout worked at this time. However in reality, I was looking for an answer to the wrong question: "How to fix my text editor?"</p>
-        <p>Once I realised how the grid layout works, I was excited to make my pages look the way I imagined them. Something that helped me decide on my website design, was looking at other web developers portfolios. A lot of them have tons of animations, especially on the homepage, however I'm not really a fan of that. I understand that it's a great way of showcasing skills however I believe that less is sometimes more. A nice clean professional look is what I chose. One thing I knew from the start was that I wanted a dark theme website. They are great because they put less strain on my eyes. When I visit a new web page, the first thing I usually look for is the dark theme button.</p>
         <p>Learning about columns took the least amount of time for me. Especially in comparison to the grid layout, which took me about 4 days to master. With the grid layout I kept forgetting either to write display: grid; or to list the 'grid-template-area's. However with columns I was able to create a layout within about 5 minutes of reading about them. Although I must admit that at first, when I realised that the portfolio needs to be in columns, I thought that it will take me the same amount of time as the grid layout.</p>
-        <p>Chrome's inspect option helped me a great deal with debugging. I was able to select certain elements, see grid layout lines, grid area names, the positions of elements. It also helped me figure out which widths and heights I needed to use.</p>
-        <p>Since I opted for dark background colours, I needed bright coloured fonts. I love the combination of purple with the dark theme as it makes the titles pop out a bit. Also the bright text elevates the dark backgroud theme, making the website a bit more cheerful.</p>
-        <p>My favourite moment was when I figured out a simple way to create the animated border on hover effect in my nav menu. At first I thought that it would take me days to figure out how to create keyframe animations, however I was able to realise my idea within about 10 minutes of research.</p>
-    </article>
 
-    <article>
-        <h1>Validation Reports - Screenshots</h1>
-        <h2>15/APR/2022</h2>
-        <img src="indexvalid.png" alt="Screenshot">
-        <img src="portfoliovalid.png" alt="Screenshot">
-        <img src="blogvalid.png" alt="Screenshot">
-        <img src="contactvalid.png" alt="Screenshot">
-        <img src="reportvalid.png" alt="Screenshot">
-        <img src="maincssvalid.png" alt="Screenshot">
-        <img src="desktopcssvalid.png" alt="Screenshot">
-        <img src="mobilecssvalid.png" alt="Screenshot">
+        <h3>Designing the UI</h3>
+        <p>Something that helped me decide on my website design, was looking at other web developers portfolios. A lot of them have tons of animations, especially on the homepage, however I'm not really a fan of that. I understand that it's a great way of showcasing skills however I believe that less is sometimes more. A nice clean professional look is what I chose. One thing I knew from the start was that I wanted a dark theme website. They are great because they put less strain on my eyes. When I visit a new web page, the first thing I usually look for is the dark theme button.</p>
+
+        <p>Since I opted for dark background colours, I needed bright coloured fonts. I love the combination of purple with the dark theme as it makes the titles pop out a bit. Also the bright text elevates the dark backgroud theme, making the website a bit more cheerful.</p>
+
     </article>
 
     <article>
         <h1>Screenshots from progress</h1>
         <h2>15/APR/2022</h2>
-        <p>In the beginning the different colours helped me see how my code influenced the layout:</p>
+        <p>In the beginning the different colours helped me see how my code influenced the layout.</p>
+        <h3>Before:</h3>
         <img src="screenshot1.png" alt="Screenshot">
-        <p>Menu items misaligned:</p>
+        <h3>After:</h3>
+        <img src="aft2.png" alt="Screenshot">
+
+        <p>At first, my menu items were misaligned if I lowered my screen width. I fixed this by using display:inline-block for the links in the menu. This way they always fit inside the grid cell.</p>
+        <h3>Before:</h3>
         <img src="screenshot2.png" alt="Screenshot">
+        <h3>After:</h3>
+        <img src="aft1.png" alt="Screenshot">
     </article>
+
+    <article>
+        <h1>Validation Reports - Screenshots</h1>
+        <h2>15/APR/2022</h2>
+        <h3>Validation Report - Homepage</h3>
+        <img src="indexvalid.png" alt="Screenshot">
+        <h3>Validation Report - Portfolio</h3>
+        <img src="portfoliovalid.png" alt="Screenshot">
+        <h3>Validation Report - Blog</h3>
+        <img src="blogvalid.png" alt="Screenshot">
+        <h3>Validation Report - Contact</h3>
+        <img src="contactvalid.png" alt="Screenshot">
+        <h3>Validation Report - Site Report</h3>
+        <img src="reportvalid.png" alt="Screenshot">
+        <h3>Validation Report - Main CSS</h3>
+        <img src="maincssvalid.png" alt="Screenshot">
+        <h3>Validation Report - Desktop CSS</h3>
+        <img src="desktopcssvalid.png" alt="Screenshot">
+        <h3>Validation Report - Mobile CSS</h3>
+        <img src="mobilecssvalid.png" alt="Screenshot">
+    </article>
+
 </main>
 
 <footer>&copy; Mimi - 2022</footer>

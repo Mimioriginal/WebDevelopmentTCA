@@ -365,9 +365,11 @@ background colour set because of bright colours on the body background image*/
 .srmain article{
     margin: 6%;
     background-color: rgb(22, 22, 22);
+    padding: 1em;
+    border-radius: 25px;
 }
 
-.srmain h1{
+.srmain h1, .srmain h3{
     color: violet;
 }
 
@@ -390,4 +392,8 @@ background colour set because of bright colours on the body background image*/
 .srmain p{
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+.srmain h3{
+    margin-top: 2em;
 }

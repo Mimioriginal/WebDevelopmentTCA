@@ -136,7 +136,7 @@ a.mobilemenu.active{
 }
 
 /*blog styling*/
-.blogmain p, .blogmain h1, .blogmain h2, .srmain p, .srmain h1, .srmain h2{
+.blogmain p, .blogmain h1, .blogmain h2, .srmain p, .srmain h1, .srmain h2, .srmain h3{
     text-align: left;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -202,4 +202,9 @@ a.mobilemenu.active{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
+}
+
+.srmain h3{
+    color: violet;
+    margin-top: 2em;
 }
