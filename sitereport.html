@@ -30,26 +30,39 @@
         <h1>Starting with HTML and CSS</h1>
         <h2>15/APR/2022</h2>
         <h3>Learning Experience and Debugging Process</h3>
-        <p>Chrome's inspect option helped me a great deal with debugging. I was able to select certain elements, see grid layout lines, grid area names, the positions of elements. It also helped me figure out which widths and heights I needed to use.</p>
+        <p>At the beginning of the module, the first step was to identify the best text editor to use for coding the website. I have never created a website before so I experimented with different tools such as Atom, Sublime and Visual Studio Code.</p>
+        <p>I found that Visual Studio Code was the best option because it has the right features and is the right fit for my first website. It was really easy to link it to Github and had many other easy to use features such as creating new branches, merging branches and committing new updates.</p>
+        <p>Chrome's "inspect" option helped me a great deal with debugging. I was able to select certain elements, see grid layout lines, grid area names, the positions of elements and use this information to identify any code that was not working as expected. It also allowed me to adjust the height and width of the page to ensure it was working correctly on different sized screens. </p>
 
         <h3>What Went Well</h3>
-        <p>My favourite moment was when I figured out a simple way to create the animated border on hover effect in my nav menu. At first I thought that it would take me days to figure out how to create keyframe animations, however I was able to realise my idea within about 10 minutes of research.</p>
+        <p>Figuring out a simple way to create the animated border on the hover effect in my nav menu was a fast and easy method of making the buttons aesthetically pleasing. At first I thought that it would take me days to figure out how to create keyframe animations, however I was able to realise my idea within about 10 minutes of research.</p>
+        <p>The grid layout allowed me to easily position the html elements within the website, making the pages look organised.</p>
+        <p>Using CSS to control the style and layout of the pages enabled me to have a consistently designed website without the need to format each element individually by utilising classes and ID's.</p>
 
         <h3>What Went Wrong</h3>
-        <p>My least favorite moment was when I thought that Visual Studio Code transfers the classes to the CSS file from my html files. I tried to write .name_of_class in my CSS file however Visual Studio Code wasn't suggesting to autofill the class from my html file. It baffled me. For 4 hours. That was one miserable afternoon. I felt like I wasted a lot of valuable time. I had tried to type out the class anyway and apply the styles that I wanted, however my website still didn't work. The truth was that I just didn't understand how the grid layout worked at this time. However in reality, I was looking for an answer to the wrong question: "How to fix my text editor?"</p>
+        <p>When first trying to utilise classes within the CSS file, I attempted to write .name_of_class in my CSS file however Visual Studio Code wasn't suggesting to autofill the class from my html file. Unfortunately due to my lack of experience with the program at this time I did not realise that it only auto fills once you have used the class before. I did originally attempt to type it out however the web page did not look as expected because the actual issue was not with VSC, it was a problem with the code itself.
+        This set me back many hours of trying to identify the issue before realising what the problem was. </p>
+        <p>Another issue I had during the project was the layout of the navigation bar. It was intended to have all the buttons aligned in one row however as the width of the page reduced, the end buttons would start moving into a new row within their grid cell. This was corrected by using responsive width and height measurement units that allowed the navigation bar to move left on smaller screens.
+        </p>
+        <p>When designing the overall layout of my website using grid, I kept forgetting to write display: grid; or to list the 'grid-template-area's which caused some content on the page to be misaligned.</p>
 
         <h3>Technical</h3>
-        <p>First I created the index.html page with the correct DOCTYPE, head, title, body (main and footer). 
-        I then added the nav tag with an unordered list and links to the relevant pages that I will be needing in my nav bar. One think I love about Visual Studio Code editor is that I can CTRL+click on the html links listed
-        inside the nav and it will allow me to create a new html file as well as the autofill suggestions as this 
-        has saved me a lot of time.</p>
-        <p>Learning about columns took the least amount of time for me. Especially in comparison to the grid layout, which took me about 4 days to master. With the grid layout I kept forgetting either to write display: grid; or to list the 'grid-template-area's. However with columns I was able to create a layout within about 5 minutes of reading about them. Although I must admit that at first, when I realised that the portfolio needs to be in columns, I thought that it will take me the same amount of time as the grid layout.</p>
+        <p>I created the index.html page with the correct DOCTYPE, head, title and body (main and footer). I then added the nav tag with an unordered list and links to the relevant pages that I needed in my nav bar. A great feature within Visual Studio Code editor is the ability to CTRL+click on the html links listed inside the nav, which allowed me to create a new html file as well as the autofill suggestions as this saves a lot of time.</p>
+
+        <p>Using the grid feature to dictate the layout of the web site allowed me to easily adjust where each HTML element should be displayed. Having the ability to divide each page into rows and columns to customise individual cells meant that each one had a custom name, size and position.</p>
+
+        <p>The navigation bar was created using a grid layout to ensure it was consistently aligned across all pages. It includes features such as changing colour on hover for desktops and on tap for mobile. This was achieved by using the ":hover" and ":active" effect.</p>
+
+        <p>By utilising classes, I was able to style the currently open page using by highlighting that specific nav bar link with a different colour.</p>
 
         <h3>Designing the UI</h3>
-        <p>Something that helped me decide on my website design, was looking at other web developers portfolios. A lot of them have tons of animations, especially on the homepage, however I'm not really a fan of that. I understand that it's a great way of showcasing skills however I believe that less is sometimes more. A nice clean professional look is what I chose. One thing I knew from the start was that I wanted a dark theme website. They are great because they put less strain on my eyes. When I visit a new web page, the first thing I usually look for is the dark theme button.</p>
+        <p>When deciding the design for my website, I looked at other web developers websites such as: <a href="https://www.stevewolf.co/" target="_blank">Steve Wolf</a>, <a href="https://www.bilgenursaltik.com/" target="_blank">Saltik</a>, <a href="https://www.thaiphamphotography.com/" target="_blank">Thaipham Photography</a>.</p>
 
-        <p>Since I opted for dark background colours, I needed bright coloured fonts. I love the combination of purple with the dark theme as it makes the titles pop out a bit. Also the bright text elevates the dark backgroud theme, making the website a bit more cheerful.</p>
+        <p>After conducting research on different websites such as the ones listed above, I noticed that some of them have too many animations that make the pages look overly clustered and unprofessional. I came to the conclusion that my navigation bar should be positioned in the top right for ease of access with the logo and my name situated on the top left, and a footer at the bottom of the page (as per layout.drawio in Github). This is common in most commercial websites which means it will be intuitive for users visiting mine.</p>
 
+        <p>One thing I knew from the start was that I wanted a dark themed website. They are great because they put less strain on my eyes. When I visit a web site, the first thing I usually look for is the dark theme button.</p>
+
+        <p>Since I opted for dark background colours, I needed bright coloured fonts. I love the combination of purple with the dark theme as it makes the titles stand out and the bright text elevates the dark background theme making the website more colourful.</p>
     </article>
 
     <article>
